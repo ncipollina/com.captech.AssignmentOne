@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface A1DetailViewController : UIViewController
+@interface A1DetailViewController : UITableViewController
 
-@property (strong, nonatomic) id detailItem;
-
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) NSArray *eventsArray;
 
 @end

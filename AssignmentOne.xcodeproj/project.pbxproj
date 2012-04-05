@@ -18,6 +18,7 @@
 		9342E265152DD178001ED992 /* AssignmentOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9342E263152DD178001ED992 /* AssignmentOne.xcdatamodeld */; };
 		9342E268152DD178001ED992 /* A1MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9342E267152DD178001ED992 /* A1MasterViewController.m */; };
 		9342E26B152DD178001ED992 /* A1DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9342E26A152DD178001ED992 /* A1DetailViewController.m */; };
+		9342E277152DE1E4001ED992 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 9342E276152DE1E4001ED992 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,18 +27,20 @@
 		9342E24E152DD178001ED992 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9342E250152DD178001ED992 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9342E252152DD178001ED992 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		9342E256152DD178001ED992 /* AssignmentOne-Info.plist */ = {isa = PBXFileReference; path = "AssignmentOne-Info.plist"; sourceTree = "<group>"; };
+		9342E256152DD178001ED992 /* AssignmentOne-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AssignmentOne-Info.plist"; sourceTree = "<group>"; };
 		9342E258152DD178001ED992 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9342E25A152DD178001ED992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9342E25C152DD178001ED992 /* AssignmentOne-Prefix.pch */ = {isa = PBXFileReference; path = "AssignmentOne-Prefix.pch"; sourceTree = "<group>"; };
-		9342E25D152DD178001ED992 /* A1AppDelegate.h */ = {isa = PBXFileReference; path = A1AppDelegate.h; sourceTree = "<group>"; };
+		9342E25C152DD178001ED992 /* AssignmentOne-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssignmentOne-Prefix.pch"; sourceTree = "<group>"; };
+		9342E25D152DD178001ED992 /* A1AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A1AppDelegate.h; sourceTree = "<group>"; };
 		9342E25E152DD178001ED992 /* A1AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A1AppDelegate.m; sourceTree = "<group>"; };
 		9342E261152DD178001ED992 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9342E264152DD178001ED992 /* AssignmentOne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssignmentOne.xcdatamodel; sourceTree = "<group>"; };
-		9342E266152DD178001ED992 /* A1MasterViewController.h */ = {isa = PBXFileReference; path = A1MasterViewController.h; sourceTree = "<group>"; };
+		9342E266152DD178001ED992 /* A1MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A1MasterViewController.h; sourceTree = "<group>"; };
 		9342E267152DD178001ED992 /* A1MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A1MasterViewController.m; sourceTree = "<group>"; };
-		9342E269152DD178001ED992 /* A1DetailViewController.h */ = {isa = PBXFileReference; path = A1DetailViewController.h; sourceTree = "<group>"; };
+		9342E269152DD178001ED992 /* A1DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A1DetailViewController.h; sourceTree = "<group>"; };
 		9342E26A152DD178001ED992 /* A1DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A1DetailViewController.m; sourceTree = "<group>"; };
+		9342E275152DE1E3001ED992 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		9342E276152DE1E4001ED992 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				9342E269152DD178001ED992 /* A1DetailViewController.h */,
 				9342E26A152DD178001ED992 /* A1DetailViewController.m */,
 				9342E263152DD178001ED992 /* AssignmentOne.xcdatamodeld */,
+				9342E275152DE1E3001ED992 /* Event.h */,
+				9342E276152DE1E4001ED992 /* Event.m */,
 				9342E255152DD178001ED992 /* Supporting Files */,
 			);
 			path = AssignmentOne;
@@ -178,6 +183,7 @@
 				9342E265152DD178001ED992 /* AssignmentOne.xcdatamodeld in Sources */,
 				9342E268152DD178001ED992 /* A1MasterViewController.m in Sources */,
 				9342E26B152DD178001ED992 /* A1DetailViewController.m in Sources */,
+				9342E277152DE1E4001ED992 /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +295,7 @@
 				9342E270152DD178001ED992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

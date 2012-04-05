@@ -10,9 +10,10 @@
 
 #import <CoreData/CoreData.h>
 
-@interface A1MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface A1MasterViewController : UIViewController
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+@property (nonatomic, copy) NSArray *eventsArray;
 
 @end
