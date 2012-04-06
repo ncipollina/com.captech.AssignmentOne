@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93329B4E152F1DE000E29194 /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 93329B4D152F1DE000E29194 /* A1.png */; };
+		93329B50152F1E6900E29194 /* A1_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 93329B4F152F1E6900E29194 /* A1_Big.png */; };
 		9342E24D152DD178001ED992 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9342E24C152DD178001ED992 /* UIKit.framework */; };
 		9342E24F152DD178001ED992 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9342E24E152DD178001ED992 /* Foundation.framework */; };
 		9342E251152DD178001ED992 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9342E250152DD178001ED992 /* CoreGraphics.framework */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93329B4D152F1DE000E29194 /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
+		93329B4F152F1E6900E29194 /* A1_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1_Big.png; sourceTree = "<group>"; };
 		9342E248152DD178001ED992 /* AssignmentOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9342E24C152DD178001ED992 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9342E24E152DD178001ED992 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +65,8 @@
 		9342E23D152DD178001ED992 = {
 			isa = PBXGroup;
 			children = (
+				93329B4F152F1E6900E29194 /* A1_Big.png */,
+				93329B4D152F1DE000E29194 /* A1.png */,
 				9342E254152DD178001ED992 /* AssignmentOne */,
 				9342E24B152DD178001ED992 /* Frameworks */,
 				9342E249152DD178001ED992 /* Products */,
@@ -168,6 +174,8 @@
 			files = (
 				9342E259152DD178001ED992 /* InfoPlist.strings in Resources */,
 				9342E262152DD178001ED992 /* MainStoryboard.storyboard in Resources */,
+				93329B4E152F1DE000E29194 /* A1.png in Resources */,
+				93329B50152F1E6900E29194 /* A1_Big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +268,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AssignmentOne/AssignmentOne-Prefix.pch";
 				INFOPLIST_FILE = "AssignmentOne/AssignmentOne-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -271,7 +281,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AssignmentOne/AssignmentOne-Prefix.pch";
 				INFOPLIST_FILE = "AssignmentOne/AssignmentOne-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

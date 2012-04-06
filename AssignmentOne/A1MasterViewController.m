@@ -13,7 +13,6 @@
 #import "Event.h"
 
 @interface A1MasterViewController ()
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation A1MasterViewController
@@ -60,11 +59,10 @@
 }
 
 - (void)insertNewObject
-{
+{    
     Event *event = (Event *)[NSEntityDescription insertNewObjectForEntityForName:@"Event" inManagedObjectContext:self.managedObjectContext];  
     
     [event setTimeStamp:[NSDate date]];
-    
     // Save the context.
     NSError *error = nil;
     if (![self.managedObjectContext save:&error]) {
