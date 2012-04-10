@@ -20,6 +20,8 @@
 		93354B701533C729002EA58E /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 93354B6F1533C729002EA58E /* Event.m */; };
 		93354B741533C889002EA58E /* A1DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93354B721533C889002EA58E /* A1DetailViewController.m */; };
 		93354B751533C889002EA58E /* A1DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93354B731533C889002EA58E /* A1DetailViewController.xib */; };
+		9373C82D15345F6000353E26 /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9373C82C15345F6000353E26 /* A1.png */; };
+		9373C83015345F6400353E26 /* A1_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 9373C82F15345F6400353E26 /* A1_Big.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		93354B711533C889002EA58E /* A1DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A1DetailViewController.h; sourceTree = "<group>"; };
 		93354B721533C889002EA58E /* A1DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A1DetailViewController.m; sourceTree = "<group>"; };
 		93354B731533C889002EA58E /* A1DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A1DetailViewController.xib; sourceTree = "<group>"; };
+		9373C82C15345F6000353E26 /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
+		9373C82F15345F6400353E26 /* A1_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1_Big.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 		93354B381533C505002EA58E = {
 			isa = PBXGroup;
 			children = (
+				9373C82F15345F6400353E26 /* A1_Big.png */,
+				9373C82C15345F6000353E26 /* A1.png */,
 				93354B4F1533C505002EA58E /* AssignmentOne */,
 				93354B461533C505002EA58E /* Frameworks */,
 				93354B441533C505002EA58E /* Products */,
@@ -172,6 +178,8 @@
 				93354B541533C505002EA58E /* InfoPlist.strings in Resources */,
 				93354B6A1533C5A8002EA58E /* A1MasterViewController.xib in Resources */,
 				93354B751533C889002EA58E /* A1DetailViewController.xib in Resources */,
+				9373C82D15345F6000353E26 /* A1.png in Resources */,
+				9373C83015345F6400353E26 /* A1_Big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +299,7 @@
 				93354B621533C505002EA58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
