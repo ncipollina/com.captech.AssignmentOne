@@ -2,7 +2,7 @@
 //  A1AppDelegate.h
 //  AssignmentOne
 //
-//  Created by Nicholas Cipollina on 4/5/12.
+//  Created by Nicholas Cipollina on 4/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -18,5 +18,8 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+
+@property (strong, nonatomic) UINavigationController *navigationController;
+
 
 @end

@@ -2,12 +2,11 @@
 //  A1AppDelegate.m
 //  AssignmentOne
 //
-//  Created by Nicholas Cipollina on 4/5/12.
+//  Created by Nicholas Cipollina on 4/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "A1AppDelegate.h"
-
 #import "A1MasterViewController.h"
 
 @implementation A1AppDelegate
@@ -16,16 +15,35 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize navigationController = _navigationController;
+
+- (void)dealloc
+{
+    [_window release];
+    [__managedObjectContext release];
+    [__managedObjectModel release];
+    [__persistentStoreCoordinator release];
+    [_navigationController release];
+    [super dealloc];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    A1MasterViewController *controller = (A1MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    
+    A1MasterViewController *masterViewController = [[[A1MasterViewController alloc] initWithNibName:@"A1MasterViewController" bundle:nil] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+    masterViewController.managedObjectContext = self.managedObjectContext;
+    if (self.managedObjectContext == nil)
+        NSLog(@"It is nil here as well.  WTF!");
+    if (masterViewController.managedObjectContext == nil)
+        NSLog(@"Nil after we set it.  WTF!");
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
